@@ -8,6 +8,9 @@ RUN apt-get update && \
          python3-pip \
 	 python3-dev \
 	 python3-coverage \
+	 python3-wheel \
+	 libxml2-dev \
+ 	 libxslt1-dev \
 	 gcc \
 	 g++ \
          apt-utils \

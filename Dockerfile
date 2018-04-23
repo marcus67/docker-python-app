@@ -11,6 +11,8 @@ RUN apt-get update && \
 	 python3-wheel \
 	 libxml2-dev \
  	 libxslt1-dev \
+	 postgresql-client \
+ 	 libpq-dev \
 	 git \
 	 gcc \
 	 g++ \

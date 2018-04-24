@@ -18,6 +18,7 @@ RUN apt-get update && \
 	 g++ \
          apt-utils \
          curl \
+	 wget \
 	 expect \
          unzip && \
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get clean

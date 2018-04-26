@@ -1,4 +1,4 @@
-# docker-docker
+# docker-python-app
 Simple Docker containing
 
 * python3

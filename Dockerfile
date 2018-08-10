@@ -6,7 +6,6 @@ RUN apt-get update && \
          python3 \
          python3-pip \
 	 python3-dev \
-	 python3-jinja2 \
 	 python3-wheel \
 	 libxml2-dev \
  	 libxslt1-dev \
@@ -21,5 +20,5 @@ RUN apt-get update && \
 	 expect \
          unzip && \
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get clean && \
-    pip3 install coverage
+    pip3 install coverage jinja2
     

@@ -1,13 +1,22 @@
 # docker-python-app
-Simple Docker containing
+Simple Docker container for testing and running Python applications.
+
+## Installed Debian Packages
 
 * python3
 * python3-dev
-* python3-jinja2
 * pip3
 * gcc
 * apt-utils
 * curl
 * unzip
 
-preinstalled.
+## Preinstalled PIP packages
+
+* jinja2
+* coverage
+* selenium
+
+## Support for Selenium Tests
+
+The container has Google Chrome 71 and the matchting Chrome Web Driver 2.46 preinstalled to enable Selenimum tests.

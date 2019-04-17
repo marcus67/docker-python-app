@@ -19,6 +19,12 @@ RUN apt-get update && \
 	 wget \
 	 expect \
          unzip && \
-    LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get clean && \
-    pip3 install coverage jinja2
-    
+    pip3 install coverage jinja2 selenium && \
+    curl -L https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip && \
+    cd tmp && \
+    unzip /tmp/chromedriver_linux64.zip && \
+    mv /tmp/chromedriver /usr/local/bin && \
+    curl -L https://www.slimjet.com/chrome/download-chrome.php?file=files%2F71.0.3578.80%2Fgoogle-chrome-stable_current_amd64.deb -o /tmp/google-chrome-stable_current_amd64.deb && \
+    ( dpkg -i /tmp/google-chrome-stable_current_amd64.deb || true  ) && \
+    LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes -f && \
+    LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get clean

@@ -18,7 +18,9 @@ RUN apt-get update && \
          curl \
 	 wget \
 	 expect \
-         unzip && \
+         unzip \
+         sshpass \
+         openssh-client && \
     pip3 install coverage jinja2 selenium && \
     curl -L https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip && \
     cd tmp && \

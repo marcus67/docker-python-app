@@ -18,6 +18,7 @@ Simple Docker container for testing and running Python applications.
 * jinja2
 * coverage
 * selenium
+* codecov
 
 ## Support for Selenium Tests
 

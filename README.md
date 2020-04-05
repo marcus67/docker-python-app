@@ -12,6 +12,7 @@ Simple Docker container for testing and running Python applications.
 * unzip
 * openssh-client
 * sshpass
+* twine
 
 ## Preinstalled PIP packages
 

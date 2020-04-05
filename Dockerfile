@@ -5,23 +5,28 @@ RUN apt-get update && \
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes --no-install-recommends \
          python3 \
          python3-pip \
-	 python3-dev \
-	 python3-wheel \
-	 libxml2-dev \
- 	 libxslt1-dev \
-	 postgresql-client \
- 	 libpq-dev \
-	 git \
-	 gcc \
-	 g++ \
+         python3-dev \
+         python3-wheel \
+         libxml2-dev \
+         libxslt1-dev \
+         postgresql-client \
+         libpq-dev \
+         git \
+         gcc \
+         g++ \
          apt-utils \
          curl \
-	 wget \
-	 expect \
+         wget \
+         expect \
          unzip \
          sshpass \
          openssh-client && \
-    pip3 install codecov coverage jinja2 selenium && \
+    pip3 install \
+         codecov \
+         coverage \
+         jinja2 \
+         selenium \
+         twine && \
     curl -L https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip && \
     cd tmp && \
     unzip /tmp/chromedriver_linux64.zip && \

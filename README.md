@@ -20,6 +20,7 @@ Simple Docker container for testing and running Python applications.
 * coverage
 * selenium
 * codecov
+* babel
 
 ## Support for Selenium Tests
 

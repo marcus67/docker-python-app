@@ -1,5 +1,5 @@
 # docker-python-app
-Simple Docker container for testing and running Python applications based on base image `python:3.9`.
+Simple Docker container for testing and running Python applications based on base image `python:3.8.7`.
 
 ## Installed Debian Packages
 

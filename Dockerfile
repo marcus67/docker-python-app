@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:3.9
 LABEL maintainer "marcus.rickert@accso.de"
 
 RUN apt-get update && \

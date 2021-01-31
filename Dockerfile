@@ -24,13 +24,14 @@ RUN apt-get update && \
          libgtk-3-dev \
          libpulse-dev && \
     pip3 install \
+         wheel \
          codecov \
          coverage \
          jinja2 \
          selenium \
          twine \
          babel \
-         setuptools==40.8.0 && \
+         setuptools && \
     curl -L https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip && \
     cd tmp && \
     unzip /tmp/chromedriver_linux64.zip && \

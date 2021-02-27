@@ -13,6 +13,9 @@ Simple Docker container for testing and running Python applications based on bas
 * openssh-client
 * sshpass
 * twine
+* libsasl2-dev
+* libldap2-dev
+* libssl-dev
 
 ## Preinstalled PIP packages
 

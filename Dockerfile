@@ -22,7 +22,10 @@ RUN apt-get update && \
          sshpass \
          openssh-client \
          libgtk-3-dev \
-         libpulse-dev && \
+         libpulse-dev \
+         libsasl2-dev \
+         libldap2-dev \
+         libssl-dev && \
     pip3 install \
          wheel \
          codecov \

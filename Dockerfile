@@ -1,5 +1,5 @@
 FROM python:3.8.7
-LABEL maintainer "marcus.rickert@accso.de"
+LABEL maintainer = "marcus.rickert@accso.de"
 
 RUN apt-get update && \
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes --no-install-recommends \
@@ -36,10 +36,13 @@ RUN apt-get update && \
          babel \
          setuptools && \
     curl -L https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip && \
+    curl -L https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip -o /tmp/sonar-scanner-cli-linux.zip && \
+    curl -L https://www.slimjet.com/chrome/download-chrome.php?file=files%2F71.0.3578.80%2Fgoogle-chrome-stable_current_amd64.deb -o /tmp/google-chrome-stable_current_amd64.deb && \
     cd tmp && \
     unzip /tmp/chromedriver_linux64.zip && \
+    unzip /tmp/sonar-scanner-cli-linux.zip && \
+    ln -s /tmp/sonar-scanner-*-linux/bin/sonar-scanner /usr/local/bin && \
     mv /tmp/chromedriver /usr/local/bin && \
-        curl -L https://www.slimjet.com/chrome/download-chrome.php?file=files%2F71.0.3578.80%2Fgoogle-chrome-stable_current_amd64.deb -o /tmp/google-chrome-stable_current_amd64.deb && \
     ( dpkg -i /tmp/google-chrome-stable_current_amd64.deb || true  ) && \
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes -f && \
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get clean

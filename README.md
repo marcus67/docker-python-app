@@ -16,6 +16,8 @@ Simple Docker container for testing and running Python applications based on bas
 * libsasl2-dev
 * libldap2-dev
 * libssl-dev
+* libnss3
+* libasound2 
 
 ## Preinstalled PIP packages
 
@@ -24,10 +26,15 @@ Simple Docker container for testing and running Python applications based on bas
 * selenium
 * codecov
 * babel
+* twine
+* wheel
+* install
+* setuptools
 
 ## Support for Selenium Tests
 
-The container has Google Chrome 89 and the matching Chrome Web Driver preinstalled to enable Selenium tests.
+The container has Google Chrome 89 (89.0.4389.114) and the matching Chrome Web Driver preinstalled to enable 
+Selenium tests. See https://omahaproxy.appspot.com/.
 
 ## Support for SonarQube
 

@@ -37,9 +37,10 @@ RUN apt-get update && \
          twine \
          babel \
          setuptools && \
-    curl -L -s https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip -o /tmp/sonar-scanner-cli-linux.zip && \
-    unzip /tmp/sonar-scanner-cli-linux.zip && \
-    ln -s /tmp/sonar-scanner-*-linux/bin/sonar-scanner /usr/local/bin
+    cd /opt && \
+    curl -L -s https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip -o /opt/sonar-scanner-cli-linux.zip && \
+    unzip /opt/sonar-scanner-cli-linux.zip && \
+    ln -s /opt/sonar-scanner-*-linux/bin/sonar-scanner /usr/local/bin
 RUN cd /opt && \
     curl -L -s https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F${CHROME_BRANCH_BASE_POSITION}%2Fchromedriver_linux64.zip?generation=1610673102313387\&alt=media -o /opt/chromedriver.zip && \
     unzip /opt/chromedriver.zip && \

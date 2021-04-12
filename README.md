@@ -27,7 +27,7 @@ Simple Docker container for testing and running Python applications based on bas
 
 ## Support for Selenium Tests
 
-The container has Google Chrome 71 and the matching Chrome Web Driver 2.46 preinstalled to enable Selenium tests.
+The container has Google Chrome 89 and the matching Chrome Web Driver preinstalled to enable Selenium tests.
 
 ## Support for SonarQube
 

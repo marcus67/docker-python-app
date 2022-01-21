@@ -18,6 +18,7 @@ Simple Docker container for testing and running Python applications based on bas
 * libssl-dev
 * libnss3
 * libasound2 
+* xvfb
 
 ## Preinstalled PIP packages
 
@@ -39,3 +40,7 @@ Selenium tests. See https://omahaproxy.appspot.com/.
 ## Support for SonarQube
 
 The container has the CLI tools (version 4.6.0.2311) for uploading to SonarQube installed.
+
+## Updating the Chromium base position
+
+See [here](https://omahaproxy.appspot.com/) to obtain the base position.

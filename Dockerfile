@@ -27,7 +27,8 @@ RUN apt-get update && \
          libldap2-dev \
          libssl-dev \
          libnss3 \
-         libasound2 && \
+         libasound2 \
+         xvfb && \
     pip3 install \
          wheel \
          codecov \

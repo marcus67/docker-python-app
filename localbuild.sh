@@ -1,1 +1,1 @@
-docker build -t accso/docker-python-app:latest  . $*
+docker build -t marcusrickert/docker-python-app:latest  . $*

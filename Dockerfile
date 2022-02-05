@@ -28,7 +28,8 @@ RUN apt-get update && \
          libssl-dev \
          libnss3 \
          libasound2 \
-         xvfb && \
+         xvfb \
+         jq && \
     pip3 install \
          wheel \
          codecov \

@@ -19,6 +19,7 @@ Simple Docker container for testing and running Python applications based on bas
 * libnss3
 * libasound2 
 * xvfb
+* jq
 
 ## Preinstalled PIP packages
 

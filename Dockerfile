@@ -29,7 +29,8 @@ RUN apt-get update && \
          libnss3 \
          libasound2 \
          xvfb \
-         jq && \
+         jq \
+         iputils-ping && \
     pip3 install \
          wheel \
          codecov \

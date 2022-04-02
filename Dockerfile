@@ -1,4 +1,4 @@
-FROM python:3.8.7
+FROM python:3.9-slim
 LABEL maintainer = "marcus.rickert@accso.de"
 ENV CHROME_BRANCH_BASE_POSITION=843831
 RUN apt-get update && \

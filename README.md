@@ -20,6 +20,9 @@ Simple Docker container for testing and running Python applications based on bas
 * libasound2 
 * xvfb
 * jq
+* iputils-ping
+* sudo
+* iptables
 
 ## Preinstalled PIP packages
 

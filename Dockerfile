@@ -30,7 +30,9 @@ RUN apt-get update && \
          libasound2 \
          xvfb \
          jq \
-         iputils-ping && \
+         iputils-ping \
+         iptables \
+         sudo && \
     pip3 install \
          wheel \
          codecov \

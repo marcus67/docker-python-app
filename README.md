@@ -3,6 +3,7 @@ Simple Docker container for testing and running Python applications based on bas
 
 ## Installed Debian Packages
 
+* chromium
 * python3
 * python3-dev
 * pip3
@@ -35,11 +36,6 @@ Simple Docker container for testing and running Python applications based on bas
 * wheel
 * install
 * setuptools
-
-## Support for Selenium Tests
-
-The container has Google Chrome 89 (89.0.4389.114) and the matching Chrome Web Driver preinstalled to enable 
-Selenium tests. See https://omahaproxy.appspot.com/.
 
 ## Support for SonarQube
 
